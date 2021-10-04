@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+.siteHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkgreen;
+    background-color: moccasin;
+    border: darkgreen 2px solid;
+}
+
+.navFlexContainer {
+    display:flex;
+    align-items: stretch;
+    width: 100%;
+
+}
+
+.textArea {
+    width: 300px;
+    height: 200px;
+}
+
+.navItem {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkgreen;
+    border: darkgreen 5px solid;
+    border-bottom: darkgreen 7px solid;
+    background-color: darkseagreen;
+    padding: 5px 5px;
+    width: 25%;
+}
+
+.assortmentContainer{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    padding: 20px;
+}
+
+.formQuestions {
+    margin:10px;
+}
+
+.assortmentItem {
+    border: 5px darkgreen solid;
+    width: auto;
+    align-self: center;
+    padding-top: 10px;
+}
+
+a:link {
+    color:darkgreen;
+}
+
+.banner {
+    border-bottom: 10px darkgreen solid;
+    height: 100px;
+}
+
+.greenStore {
+    width: 70%;
+    border: 7px darkgreen solid;
+    margin-top: 15px;
+}
+
+.offersPictures {
+    width: 200px;
+    border: solid darkgreen 1px;
+}
+
+.specialOffers {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "salads"
+        "beets"
+        "strawberry"
+        "broccoli" 
+        "oranges"
+        "almonds";
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+        
+}
+
+.item1{
+    grid-area: salads;
+    border: solid darkgreen 5px;
+    background-color: crimson;
+    color: black;
+    height: 200px;
+    
+}
+
+.item2 {
+    grid-area: beets;
+    border: solid darkgreen 5px;
+    height: 200px;
+    
+}
+
+.item3 {
+    grid-area: strawberry;
+    border: solid darkgreen 5px;
+    height: 200px;
+    
+}
+
+.item4 {
+    grid-area: broccoli;
+    border: solid darkgreen 5px;
+    height: 200px;
+    
+}
+
+.item5 {
+    grid-area: oranges;
+    border: solid darkgreen 5px; 
+    height: 200px;   
+}
+
+.item6 {
+    grid-area: almonds;
+    border: solid darkgreen 5px;
+    color: black;
+    background-color: crimson;
+    height: 200px;
+}
+
+.mainItem {
+    background-color:moccasin;
+    color: darkgreen;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px 5%;
+    font-size: 18px;
+    }
+
+.pBorder {
+    border: 5px darkgreen solid;
+    padding: 10px 30px;
+}
+
+.mainPara {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.assortmentImages{
+    margin: 10px 0px;
+    border: solid darkgreen 5px;
+}
+
+.footerBar {
+    background-color: darkgreen;
+    color: moccasin;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 15px;
+}
+
+a.bottomLink {
+    color: moccasin;
+}
+
+a:hover {
+    color: crimson;
+}
+
+
+
+@media (min-width: 1024px) {
+    .navItem {
+        font-size:24px;
+        padding: 5px 10px;
+    }
+    .footerBar {
+        font-size: 16px;
+    }
+    header {
+        padding: 5px 0px;
+    }
+    .assortmentContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .assortmentItem{
+        width: auto;
+    }
+    .specialOffers{
+        grid-template-areas:
+        "salads salads"
+        "beets strawberry"
+        "broccoli oranges"
+        "almonds almonds";
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
+        font-size: 30px;
+        width: 80%;
+        margin: 0px 10%;
+    }
+    .offersPictures {
+        width: 200px;
+    }
+}
